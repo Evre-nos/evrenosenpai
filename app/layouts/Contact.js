@@ -1,7 +1,10 @@
-import { IoMoon, IoArrowForward, IoHomeSharp, IoMailOpenSharp, IoLogoDeviantart, IoPhonePortrait } from "react-icons/io5";
+// Importing necessary dependencies and components
+import { IoMoon, IoArrowForward, IoHomeSharp, IoMailOpenSharp, IoLogoDeviantart, IoPhonePortrait } from "react-icons/io5"; // Icons from react-icons library
 
+// Contact functional component
 const Contact = () => {
-    return (
+  // Render the Contact section
+  return (
         <section id="contact" className="contact" aria-labelledby="contact-label">
 
             <div className="title-wrapper container">
@@ -28,10 +31,10 @@ const Contact = () => {
                     <textarea name="message" placeholder="Enter massges" required className="input-field"></textarea>
 
                     <a href="#" className="btn has-before">
-                                        <span className="span">Get a Quote</span>
+                        <span className="span">Get a Quote</span>
 
-                                        <IoArrowForward className="ion-icon" aria-hidden="true" />
-                                    </a>    
+                        <IoArrowForward className="ion-icon" aria-hidden="true" />
+                    </a>
 
                 </form>
 
@@ -47,7 +50,7 @@ const Contact = () => {
 
 
                         <div className="item-icon">
-                            <IoPhonePortrait className="item-icon" aria-hidden="true" size={32}/>
+                            <IoPhonePortrait className="item-icon" aria-hidden="true" size={32} />
                         </div>
 
                         <div>
@@ -61,7 +64,7 @@ const Contact = () => {
                     <li className="contact-item">
 
                         <div className="item-icon">
-                            <IoHomeSharp className="item-icon" aria-hidden="true" size={32}/>
+                            <IoHomeSharp className="item-icon" aria-hidden="true" size={32} />
                         </div>
 
                         <div>
@@ -75,7 +78,7 @@ const Contact = () => {
                     <li className="contact-item">
 
                         <div className="item-icon">
-                            <IoMailOpenSharp className="item-icon" aria-hidden="true" size={32}/>
+                            <IoMailOpenSharp className="item-icon" aria-hidden="true" size={32} />
                         </div>
 
                         <div>
@@ -94,4 +97,5 @@ const Contact = () => {
     )
 }
 
+// Exporting the Contact component as the default export of this module
 export default Contact

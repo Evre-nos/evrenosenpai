@@ -1,65 +1,75 @@
-import {  IoLogoDribbble, IoLogoGithub, IoLogoInstagram, IoLogoLinkedin, IoLogoSkype, IoLogoTwitch, IoLogoTwitter, IoPhonePortrait } from "react-icons/io5";
+// Importing necessary dependencies and components
+import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin, IoLogoSkype, IoLogoTwitch, IoLogoTwitter, IoPhonePortrait } from "react-icons/io5"; // Importing specific icons from react-icons library
 
+// Footer functional component
+// This component doesn't receive any props
 const Footer = () => {
-  return (
-    <footer className="footer">
-    <div className="container">
+    // Rendering the Footer component
+    // The component is a footer element with the 'footer' class
+    // The footer contains a container div, which contains three unordered lists
+    // The first list contains contact information, the second list contains location information, and the third list contains social media links
+    // Each social media link is represented by a list item in the third list
+    // Each list item contains a link with a social media icon
+    return (
+        <footer className="footer">
+            <div className="container">
 
-      <ul className="footer-list">
+                <ul className="footer-list">
 
-        <li>
-          <p className="h4 footer-list-title">Get in touch</p>
-        </li>
+                    <li>
+                        <p className="h4 footer-list-title">Get in touch</p>
+                    </li>
 
-        <li>
-          <a href="mailto:info@kwilliams.com" className="footer-link">info@sorenblank.com</a>
-        </li>
+                    <li>
+                        <a href="mailto:info@kwilliams.com" className="footer-link">info@sorenblank.com</a>
+                    </li>
 
-      </ul>
+                </ul>
 
-      <ul className="footer-list">
+                <ul className="footer-list">
 
-        <li>
-          <p className="h4 footer-list-title">Locations</p>
-        </li>
+                    <li>
+                        <p className="h4 footer-list-title">Locations</p>
+                    </li>
 
-        <li>
-          <a href="#" className="footer-link">Earth — Milky Way</a>
-        </li>
+                    <li>
+                        <a href="#" className="footer-link">Earth — Milky Way</a>
+                    </li>
 
-      </ul>
+                </ul>
 
-      <ul className="social-list">
+                <ul className="social-list">
 
-        <li>
-          <a href="https://twitter.com/soren_blank/" className="social-link">
-            <IoLogoTwitter className="ion-icon" aria-hidden="true"/>
-          </a>
-        </li>
+                    <li>
+                        <a href="https://twitter.com/soren_blank/" className="social-link">
+                            <IoLogoTwitter className="ion-icon" aria-hidden="true" />
+                        </a>
+                    </li>
 
-        <li>
-          <a href="https://instagram.com/soren_blank/" className="social-link">
-            <IoLogoInstagram className="ion-icon" aria-hidden="true"/>
-          </a>
-        </li>
+                    <li>
+                        <a href="https://instagram.com/soren_blank/" className="social-link">
+                            <IoLogoInstagram className="ion-icon" aria-hidden="true" />
+                        </a>
+                    </li>
 
-        <li>
-          <a href="https://www.linkedin.com/in/siyam-afroz/" className="social-link">
-            <IoLogoLinkedin className="ion-icon" aria-hidden="true"/>
-          </a>
-        </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/siyam-afroz/" className="social-link">
+                            <IoLogoLinkedin className="ion-icon" aria-hidden="true" />
+                        </a>
+                    </li>
 
-        <li>
-            <a href="https://github.com/sorenblank/" className="social-link">
-                <IoLogoGithub className="ion-icon" aria-hidden="true"/>
-            </a>
-        </li>
+                    <li>
+                        <a href="https://github.com/sorenblank/" className="social-link">
+                            <IoLogoGithub className="ion-icon" aria-hidden="true" />
+                        </a>
+                    </li>
 
-      </ul>
+                </ul>
 
-    </div>
-    </footer>
-  )
+            </div>
+        </footer>
+    )
 }
 
+// Exporting the Footer component as the default export of this module
 export default Footer

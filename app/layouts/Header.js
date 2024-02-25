@@ -1,18 +1,24 @@
 "use client"
 
-import React, { useState, useEffect } from 'react';
-import Img from "@/app/components/Image";
-import "@/app/globals.css";
+// Importing necessary dependencies and styles
+import React, { useState, useEffect } from 'react'; // React library and hooks
+import Img from "@/app/components/Image"; // Custom Image component
+import "@/app/globals.css"; // Global styles
 
+// Header functional component
 const Header = () => {
+  // State variables for navigation and header activation
   const [navActive, setNavActive] = useState(false);
   const [headerActive, setHeaderActive] = useState(false);
 
+  // Function to toggle the navigation activation state
   const toggleNavbar = () => {
     setNavActive(!navActive);
   };
 
+  // useEffect hook to add a scroll event listener to the window
   useEffect(() => {
+    // Function to check the scroll position and set the header activation state
     const checkScroll = () => {
       if (window.scrollY >= 100) {
         setHeaderActive(true);
@@ -21,12 +27,15 @@ const Header = () => {
       }
     };
 
+    // Adding the scroll event listener
     window.addEventListener('scroll', checkScroll);
+    // Cleanup function to remove the event listener when the component unmounts
     return () => {
       window.removeEventListener('scroll', checkScroll);
     };
-  }, []);
+  }, []); // Empty dependency array means this effect runs once on mount and cleanup on unmount
 
+  // Render the header with navigation and logo
   return (
     <header className={`header ${headerActive ? 'active' : ''}`} data-header>
       <div className="container">
@@ -58,4 +67,5 @@ const Header = () => {
   )
 }
 
+// Exporting the Header component as the default export of this module
 export default Header;

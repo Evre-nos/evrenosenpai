@@ -1,9 +1,11 @@
 "use client"
 
-
+// Importing necessary components
 import Slider from "@/app/components/Slider";
 
+// Service functional component
 const Service = () => {
+    // Render the Service section
     return (
         <section id="services" className="service" aria-labelledby="service-label">
             <div className="container">
@@ -31,7 +33,7 @@ const Service = () => {
                     { icon: 'IoColorFilterOutline', title: 'Graphic Design', text: 'Our graphic design services will help your brand stand out.', number: '04', link: '#' },
                     { icon: 'IoMegaphoneOutline', title: 'Digital Marketing', text: 'Expand your reach with our comprehensive digital marketing services.', number: '05', link: '#' },
                     { icon: 'IoChatbubbleOutline', title: 'Social Media', text: 'We can help you engage your audience through social media.', number: '06', link: '#' },
-                    { icon: 'IoPhonePortraitOutline', title: 'App Development', text: 'We develop mobile apps that are intuitive and user-friendly.', number: '07', link: '#'},
+                    { icon: 'IoPhonePortraitOutline', title: 'App Development', text: 'We develop mobile apps that are intuitive and user-friendly.', number: '07', link: '#' },
                     { icon: 'IoCodeSlashOutline', title: 'Custom Solutions', text: 'We provide custom solutions for your unique business needs.', number: '08', link: '#' },
                 ]} />
 
@@ -40,4 +42,5 @@ const Service = () => {
     )
 }
 
+// Exporting the Service component as the default export of this module
 export default Service

@@ -1,8 +1,11 @@
-import Img from "@/app/components/Image";
-import { IoArrowDown, IoArrowForward, IoCloseOutline, IoDownloadOutline } from "react-icons/io5";
+// Importing necessary dependencies and components
+import Img from "@/app/components/Image"; // Custom Image component
+import { IoArrowDown, IoArrowForward } from "react-icons/io5"; // Icons from react-icons library
 
+// Blogs functional component
 const Blogs = () => {
-    return (
+  // Render the Blogs section
+  return (
         <section id="blogs" className="section blog" aria-labelledby="blog-label">
             <div className="container">
 
