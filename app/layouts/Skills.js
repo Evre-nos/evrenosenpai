@@ -24,7 +24,7 @@ const Skills = () => {
               I offer a wide range of digital services that will help you grow your business. I can help you with website design, SEO marketing, eCommerce, graphic design, digital marketing, social media, app development, and custom solutions. I am passionate about what I do and I am committed to delivering the best results for my clients.
             </p>
 
-            <a href="#" className="btn has-before">info@sorenblank.com</a>
+            <a href="#" className="btn has-before">avrenosenpai@gmail.com</a>
           </div>
 
           <div>
