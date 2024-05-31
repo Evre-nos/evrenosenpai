@@ -35,6 +35,11 @@ const Header = () => {
     };
   }, []); // Empty dependency array means this effect runs once on mount and cleanup on unmount
 
+  // useEffect hook to set the document title
+  useEffect(() => {
+    document.title = "Evrenos"; // Replace "Your New Title" with the desired title
+  }, []); // Empty dependency array means this effect runs once on mount
+
   // Render the header with navigation and logo
   return (
     <header className={`header ${headerActive ? "active" : ""}`} data-header>

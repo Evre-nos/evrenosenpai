@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="container">
         <div className="hero-content">
           <h1 className="h1 hero-title">
-            Sayeed <br /> Mahmood
+            Evrenos
           </h1>
 
           <p className="hero-subtitle">Creative Web Developer</p>
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
 
           <p className="section-text">
-            I&apos;m Sayeed Mahmood, a maverick web developer who crafts
+            I&apos;m Evrenos, a maverick web developer who crafts
             mind-bending digital experiences. A FOSS and Linux aficionado, I
             march to the beat of my own drum, defying the rat race with every
             line of code I write. Prepare for a wild ride of creativity and
